@@ -28,9 +28,8 @@ var app={
 
 	},
 	render(data){
-		console.log(data)
+		//console.log(data)
 		$("#app .location .city").innerText=data.weather[0].city_name
-		console.log("1")
 		$$("#app .panels>li")[0].innerText=data.weather[0].today.suggestion.car_washing.details
 		$$("#app .panels>li")[1].innerText=data.weather[0].today.suggestion.dressing.details
 		$$("#app .panels>li")[2].innerText=data.weather[0].today.suggestion.flu.details
